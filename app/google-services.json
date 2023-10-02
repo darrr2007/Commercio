@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1058367086073",
+    "project_id": "jcomponent-dada5",
+    "storage_bucket": "jcomponent-dada5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058367086073:android:4b11c8645471f0b737f128",
+        "android_client_info": {
+          "package_name": "com.dharshni.jcomponent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058367086073-j3ovo6egcr9escbal2ofkls98ovdm19m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYMaevpNXPZ9G88dA6a1at1FMAEXH9u08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058367086073-j3ovo6egcr9escbal2ofkls98ovdm19m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

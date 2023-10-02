@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="brandTv" type="id" />
+    <item name="categoryTv" type="id" />
+    <item name="conditionTv" type="id" />
+    <item name="locationTv" type="id" />
+    <item name="priceTv" type="id" />
+    <item name="titleTv" type="id" />
+    <item name="descriptionTv" type="id" />
+</resources>

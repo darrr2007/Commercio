@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <com.google.android.material.imageview.ShapeableImageView-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="120dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:background="#ECE4E7"-->
+<!--            android:id="@+id/imageIv"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            style="@style/ImageStyle_COrners_Rounded"/>-->
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/imageIv"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleTv"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imageIv"
+            android:layout_toStartOf="@+id/favBtn"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="The Ad Title">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptionTv"
+            android:layout_toEndOf="@+id/imageIv"
+            android:layout_below="@+id/titleTv"
+            android:ellipsize="end"
+            android:lines="3"
+            android:layout_toStartOf="@+id/favBtn"
+            android:text="The long description of the ad can be of multiple lines up to 3 lines">
+
+        </TextView>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/favBtn"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:src="@drawable/baseline_favorite_border_24"
+            android:background="@android:color/transparent">
+
+        </ImageButton>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationTv"
+            android:layout_below="@+id/descriptionTv"
+            android:ellipsize="end"
+            android:layout_toEndOf="@+id/imageIv"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:maxLines="1"
+            android:text="The Address of the Ad"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/conditionTv"
+            android:layout_below="@+id/locationTv"
+            android:text="New"
+            android:layout_toEndOf="@+id/imageIv"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"/>
+
+        <!-- New TextViews for Phone and Email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneTv"
+            android:layout_below="@+id/conditionTv"
+            android:layout_toEndOf="@+id/imageIv"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:maxLines="1"
+            android:text="Phone: 123-456-7890"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailTv"
+            android:layout_below="@+id/phoneTv"
+            android:layout_toEndOf="@+id/imageIv"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:maxLines="1"
+            android:text="Email: example@example.com"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/priceSymbolTv"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_below="@+id/phoneTv"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="2dp"
+            android:layout_toEndOf="@+id/conditionTv"
+            android:text="@string/price_symbol"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/priceTv"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_below="@+id/locationTv"
+            android:layout_toEndOf="@+id/priceSymbolTv"
+            android:layout_marginTop="4dp"
+            android:text="00"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
